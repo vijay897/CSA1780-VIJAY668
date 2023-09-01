@@ -1,0 +1,2 @@
+medical(patient,90,heart).
+medical(patient2,60,cold).
