@@ -1,0 +1,8 @@
+female(pam).
+female(liz).
+male(jim).
+male(bob).
+parent(pam,bob).
+parent(tom,bob).
+mother(X,Y):- parent(X,Y), female(X).
+father(X,Y):- parent(X,Y), male(X).
