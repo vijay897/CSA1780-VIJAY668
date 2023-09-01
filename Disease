@@ -1,0 +1,8 @@
+condition_diets(diabetes, 'Low-carb, high-fiber diet').
+condition_diets(hypertension, 'Low-sodium, heart-healthy diet').
+condition_diets(cholesterol, 'Low-cholesterol diet').
+condition_diets(osteoporosis, 'Calcium-rich diet with vitamin D').
+condition_diets(weight_loss, 'Calorie-restricted diet with exercise').
+condition_diets(healthy, 'Balanced diet with fruits, vegetables, and lean proteins').
+suggest_diet(Condition, Diet) :-
+condition_diets(Condition, Diet).
