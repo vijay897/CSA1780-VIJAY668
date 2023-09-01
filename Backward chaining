@@ -1,7 +1,9 @@
-rainy(chennai).
-	rainy(coimbatore).
-	rainy(ooty).
-	Cold(ooty).
-	snowy(X):-
-		rainy(X),
-		cold(X)
+can_fly(bird).
+
+bird(X) :- can_fly(X).
+
+bird(penguin).
+
+cannot_fly(penguin).
+
+can_swim(X) :- bird(X), cannot_fly(X).
